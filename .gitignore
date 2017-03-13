@@ -1,0 +1,6 @@
+#Anything that is in an image folder; static content should probably not be in the repo just yet
+img/
+.git
+
+#My Cloud9 config probably shouldn't get committed either. ;)
+.c9
