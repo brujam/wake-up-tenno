@@ -11,6 +11,7 @@ var weapon = React.createClass({
         return (
             React.createElement('div', {key:        this.props.ItemName,
                                         className:  this.props.ItemName,
+                                        onClick: function() { alert("Hi");},
                                        },
                                 React.createElement('div', {}, "Name: " + this.props.DisplayName),
                                 React.createElement('div', {}, "Description: " + this.props.Description)
