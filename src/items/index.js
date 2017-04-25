@@ -1,34 +1,33 @@
-/*
-
-jQuery Loading
-
-The jQuery library provides loading functionality in one line:
-
-$.getScript("my_lovely_script.js", function(){
-
-   alert("Script loaded but not necessarily executed.");
-
-});
-
-*/
-
-document.weapons = [];
+document.weapon_entry = [];
+document.weaponList_array = [];
 
 elem = React.createElement;
 
+
 $.getScript("src/items/melee-redeemer.js", function () {
     console.log("Loaded Redeemer");
-    console.log(document.weapons.length +" weapons loaded.");
-    ReactDOM.render(weaponList,
+    console.log(document.weaponList_array.length +" weapons loaded.");
+    /*ReactDOM.render(weapon,
                     document.getElementById("weapon_anchor")
+                   );*/
+    console.log(typeof document.weaponList_array);
+    console.log(document.weaponList_array.length);
+    console.log(typeof weaponList);
+    
+    console.log(weaponList);
+    
+    ReactDOM.render(weaponList,
+                    document.getElementById("weaponlist_anchor"),
+                    function () {console.log("HI")}
                    );
 });
 
-weaponList = elem('div', {key: "Weapon List"}, document.weapons);
+weapon = elem('div', {key: "Weapon Display"}, document.weapon_entry);
+weaponList = elem('div', {key: "Weapon List"}, document.weaponList_array);
 
 console.log(document.getElementById("weapon_anchor")+" exists");
 
-console.log(document.weapons.length +" weapons loaded");
+console.log(document.weaponList_array.length +" weapons loaded");
 
 /*
 ReactDOM.render(weaponList,
