@@ -3,22 +3,11 @@
 // Market price: 175 plat
 // BP price 20k credits
 
-var weapon = React.createClass({
-    propTypes: {
-        ItemName:       React.PropTypes.string.isRequired,
-        DisplayName:    React.PropTypes.string.isRequired,
-        Recipe:         React.PropTypes.any,
-        Description:    React.PropTypes.string,
-    },
-    
-    render: function() {
-        return (
-            React.createElement('div', {key:        stuff,
-                                        className:  stuff,
-                                       },
-                                React.createElement('div', {}, "text goes here"),
-                                React.createElement('div', {}, "further text goes here")
-            )
-        )
-    },
-});
+
+
+document.weapons.push(elem(weapon, {
+    ItemName: "redeemer",
+    DisplayName: "Redeemer",
+    Recipe: "Stuff and things? AkJagara and some other stuff",
+    Source: "built",
+    Description: "The God Gun"}));
