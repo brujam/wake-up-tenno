@@ -14,6 +14,7 @@ else just yet.
   * Name: Seer BP
   * Obtained by: drops from Vor
   * Crafts: Seer
+  * Costs: X, Y, Z
 * Short form weapon:
   * Name: Redeemer
   * Summary: "Melee: gunblade, shotgun"
